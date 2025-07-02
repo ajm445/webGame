@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>게임 화면</title>
+</head>
+<body>
+  <h1>게임 방에 접속 중...</h1>
+  <p id="status">상태: 대기 중</p>
+  <button id="leaveBtn" onclick="leaveRoom()">🚪 방 나가기</button>
+
+  <p id="invite">초대 링크: <input type="text" id="inviteLink" readonly /></p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

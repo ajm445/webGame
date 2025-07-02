@@ -1,0 +1,17 @@
+{
+  "name": "webgame",
+  "version": "1.0.0",
+  "description": "두 명의 플레이어가 실시간으로 협력해서 진행하는 웹 기반 RPG 게임입니다.\\ 게임 호스트가 방을 생성하고 링크를 공유하여, 또 다른 플레이어가 접속하면 게임이 시작됩니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  }
+}

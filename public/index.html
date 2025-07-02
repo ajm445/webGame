@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>2인 협동 RPG - 메인 화면</title>
+</head>
+<body>
+  <h1>2인 협동 RPG 게임</h1>
+
+  <button onclick="createRoom()">🎮 게임 방 만들기</button>
+
+  <h3>또는 방 코드로 참가:</h3>
+  <input type="text" id="roomInput" placeholder="방 코드 입력" />
+  <button onclick="joinRoom()">입장</button>
+
+  <script>
+    function createRoom() {
+      window.location.href = '/create';
+    }
+
+    function joinRoom() {
+      const code = document.getElementById('roomInput').value.trim();
+      if (code) {
+        window.location.href = `/game.html?roomId=${code}`;
+      } else {
+        alert('방 코드를 입력해주세요.');
+      }
+    }
+  </script>
+</body>
+</html>
