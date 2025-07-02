@@ -80,5 +80,7 @@ io.on('connection', (socket) => {
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 서버 실행 중: http://localhost:${PORT}`);
+  //console.log(`🚀 서버 실행 중: http://localhost:${PORT}`);
+  // 노트북 VMware window10 IPv4 사용중
+  console.log(`🚀 서버 실행 중: http://192.168.0.165:${PORT}`);
 });
